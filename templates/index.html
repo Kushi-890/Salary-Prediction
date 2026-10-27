@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Salary Predictor</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { font-family: system-ui, Arial, sans-serif; margin: 0; padding: 24px; background: #0f172a; color: #e2e8f0; }
+    .card { max-width: 520px; margin: 0 auto; background: #1e293b; padding: 28px; border-radius: 12px; box-shadow: 0 8px 30px rgba(0,0,0,.35); }
+    h1 { margin: 0 0 4px; font-size: 1.5rem; }
+    p.sub { margin: 0 0 20px; color: #94a3b8; font-size: .9rem; }
+    label { display: block; margin: 14px 0 6px; font-size: .9rem; color: #cbd5e1; }
+    select { width: 100%; padding: 10px; border-radius: 8px; border: 1px solid #334155; background: #0f172a; color: #e2e8f0; }
+    button { margin-top: 22px; width: 100%; padding: 12px; border: 0; border-radius: 8px; background: #3b82f6; color: #fff; font-size: 1rem; cursor: pointer; }
+    button:hover { background: #2563eb; }
+    .result { margin-top: 20px; padding: 16px; border-radius: 8px; background: #052e16; border: 1px solid #166534; font-size: 1.2rem; text-align: center; }
+    .error { margin-top: 20px; padding: 12px; border-radius: 8px; background: #450a0a; border: 1px solid #991b1b; }
+    .foot { margin-top: 18px; font-size: .8rem; color: #94a3b8; text-align: center; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Data Science Salary Predictor</h1>
+    <p class="sub">Estimate a yearly salary in USD from job details.</p>
+
+    <form action="/predict" method="POST">
+      <label for="job_title">Job title</label>
+      <select id="job_title" name="job_title" required>
+        {% for o in options.job_title %}<option value="{{ o.value }}" {{ 'selected' if form.get('job_title') == o.value }}>{{ o.label }}</option>{% endfor %}
+      </select>
+
+      <label for="experience_level">Experience level</label>
+      <select id="experience_level" name="experience_level" required>
+        {% for o in options.experience_level %}<option value="{{ o.value }}" {{ 'selected' if form.get('experience_level') == o.value }}>{{ o.label }}</option>{% endfor %}
+      </select>
+
+      <label for="employment_type">Employment type</label>
+      <select id="employment_type" name="employment_type" required>
+        {% for o in options.employment_type %}<option value="{{ o.value }}" {{ 'selected' if form.get('employment_type') == o.value }}>{{ o.label }}</option>{% endfor %}
+      </select>
+
+      <label for="company_location">Company location (country code)</label>
+      <select id="company_location" name="company_location" required>
+        {% for o in options.company_location %}<option value="{{ o.value }}" {{ 'selected' if form.get('company_location') == o.value }}>{{ o.label }}</option>{% endfor %}
+      </select>
+
+      <label for="company_size">Company size</label>
+      <select id="company_size" name="company_size" required>
+        {% for o in options.company_size %}<option value="{{ o.value }}" {{ 'selected' if form.get('company_size') == o.value }}>{{ o.label }}</option>{% endfor %}
+      </select>
+
+      <label for="remote_ratio">Remote work (%)</label>
+      <select id="remote_ratio" name="remote_ratio" required>
+        {% for v in options.remote_ratio %}<option value="{{ v }}" {{ 'selected' if form.get('remote_ratio') == v|string }}>{{ v }}%</option>{% endfor %}
+      </select>
+
+      <label for="work_year">Year</label>
+      <select id="work_year" name="work_year" required>
+        {% for v in options.work_year %}<option value="{{ v }}" {{ 'selected' if form.get('work_year') == v|string }}>{{ v }}</option>{% endfor %}
+      </select>
+
+      <button type="submit">Predict salary</button>
+    </form>
+
+    {% if result %}<div class="result">{{ result }}</div>{% endif %}
+    {% if error %}<div class="error">{{ error }}</div>{% endif %}
+
+    <div class="foot">Model: {{ metrics.best_model }} &middot; R&sup2; {{ '%.2f'|format(metrics.results[metrics.best_model].R2) }} on held-out data</div>
+  </div>
+</body>
+</html>

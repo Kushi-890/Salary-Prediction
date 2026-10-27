@@ -1,0 +1,475 @@
+{
+  "feature_order": [
+    "experience_level",
+    "employment_type",
+    "job_title",
+    "company_location",
+    "company_size",
+    "work_year",
+    "remote_ratio"
+  ],
+  "experience_level": [
+    {
+      "value": "EN",
+      "label": "Entry level (EN)"
+    },
+    {
+      "value": "EX",
+      "label": "Executive (EX)"
+    },
+    {
+      "value": "MI",
+      "label": "Mid level (MI)"
+    },
+    {
+      "value": "SE",
+      "label": "Senior (SE)"
+    }
+  ],
+  "employment_type": [
+    {
+      "value": "CT",
+      "label": "Contract (CT)"
+    },
+    {
+      "value": "FL",
+      "label": "Freelance (FL)"
+    },
+    {
+      "value": "FT",
+      "label": "Full time (FT)"
+    },
+    {
+      "value": "PT",
+      "label": "Part time (PT)"
+    }
+  ],
+  "company_size": [
+    {
+      "value": "L",
+      "label": "Large (> 250) (L)"
+    },
+    {
+      "value": "M",
+      "label": "Medium (50-250) (M)"
+    },
+    {
+      "value": "S",
+      "label": "Small (< 50) (S)"
+    }
+  ],
+  "job_title": [
+    {
+      "value": "3D Computer Vision Researcher",
+      "label": "3D Computer Vision Researcher"
+    },
+    {
+      "value": "AI Scientist",
+      "label": "AI Scientist"
+    },
+    {
+      "value": "Analytics Engineer",
+      "label": "Analytics Engineer"
+    },
+    {
+      "value": "Applied Data Scientist",
+      "label": "Applied Data Scientist"
+    },
+    {
+      "value": "Applied Machine Learning Scientist",
+      "label": "Applied Machine Learning Scientist"
+    },
+    {
+      "value": "BI Data Analyst",
+      "label": "BI Data Analyst"
+    },
+    {
+      "value": "Big Data Architect",
+      "label": "Big Data Architect"
+    },
+    {
+      "value": "Big Data Engineer",
+      "label": "Big Data Engineer"
+    },
+    {
+      "value": "Business Data Analyst",
+      "label": "Business Data Analyst"
+    },
+    {
+      "value": "Cloud Data Engineer",
+      "label": "Cloud Data Engineer"
+    },
+    {
+      "value": "Computer Vision Engineer",
+      "label": "Computer Vision Engineer"
+    },
+    {
+      "value": "Computer Vision Software Engineer",
+      "label": "Computer Vision Software Engineer"
+    },
+    {
+      "value": "Data Analyst",
+      "label": "Data Analyst"
+    },
+    {
+      "value": "Data Analytics Engineer",
+      "label": "Data Analytics Engineer"
+    },
+    {
+      "value": "Data Analytics Lead",
+      "label": "Data Analytics Lead"
+    },
+    {
+      "value": "Data Analytics Manager",
+      "label": "Data Analytics Manager"
+    },
+    {
+      "value": "Data Architect",
+      "label": "Data Architect"
+    },
+    {
+      "value": "Data Engineer",
+      "label": "Data Engineer"
+    },
+    {
+      "value": "Data Engineering Manager",
+      "label": "Data Engineering Manager"
+    },
+    {
+      "value": "Data Science Consultant",
+      "label": "Data Science Consultant"
+    },
+    {
+      "value": "Data Science Engineer",
+      "label": "Data Science Engineer"
+    },
+    {
+      "value": "Data Science Manager",
+      "label": "Data Science Manager"
+    },
+    {
+      "value": "Data Scientist",
+      "label": "Data Scientist"
+    },
+    {
+      "value": "Data Specialist",
+      "label": "Data Specialist"
+    },
+    {
+      "value": "Director of Data Engineering",
+      "label": "Director of Data Engineering"
+    },
+    {
+      "value": "Director of Data Science",
+      "label": "Director of Data Science"
+    },
+    {
+      "value": "ETL Developer",
+      "label": "ETL Developer"
+    },
+    {
+      "value": "Finance Data Analyst",
+      "label": "Finance Data Analyst"
+    },
+    {
+      "value": "Financial Data Analyst",
+      "label": "Financial Data Analyst"
+    },
+    {
+      "value": "Head of Data",
+      "label": "Head of Data"
+    },
+    {
+      "value": "Head of Data Science",
+      "label": "Head of Data Science"
+    },
+    {
+      "value": "Head of Machine Learning",
+      "label": "Head of Machine Learning"
+    },
+    {
+      "value": "Lead Data Analyst",
+      "label": "Lead Data Analyst"
+    },
+    {
+      "value": "Lead Data Engineer",
+      "label": "Lead Data Engineer"
+    },
+    {
+      "value": "Lead Data Scientist",
+      "label": "Lead Data Scientist"
+    },
+    {
+      "value": "Lead Machine Learning Engineer",
+      "label": "Lead Machine Learning Engineer"
+    },
+    {
+      "value": "ML Engineer",
+      "label": "ML Engineer"
+    },
+    {
+      "value": "Machine Learning Developer",
+      "label": "Machine Learning Developer"
+    },
+    {
+      "value": "Machine Learning Engineer",
+      "label": "Machine Learning Engineer"
+    },
+    {
+      "value": "Machine Learning Infrastructure Engineer",
+      "label": "Machine Learning Infrastructure Engineer"
+    },
+    {
+      "value": "Machine Learning Manager",
+      "label": "Machine Learning Manager"
+    },
+    {
+      "value": "Machine Learning Scientist",
+      "label": "Machine Learning Scientist"
+    },
+    {
+      "value": "Marketing Data Analyst",
+      "label": "Marketing Data Analyst"
+    },
+    {
+      "value": "NLP Engineer",
+      "label": "NLP Engineer"
+    },
+    {
+      "value": "Principal Data Analyst",
+      "label": "Principal Data Analyst"
+    },
+    {
+      "value": "Principal Data Engineer",
+      "label": "Principal Data Engineer"
+    },
+    {
+      "value": "Principal Data Scientist",
+      "label": "Principal Data Scientist"
+    },
+    {
+      "value": "Product Data Analyst",
+      "label": "Product Data Analyst"
+    },
+    {
+      "value": "Research Scientist",
+      "label": "Research Scientist"
+    },
+    {
+      "value": "Staff Data Scientist",
+      "label": "Staff Data Scientist"
+    }
+  ],
+  "company_location": [
+    {
+      "value": "AE",
+      "label": "AE"
+    },
+    {
+      "value": "AS",
+      "label": "AS"
+    },
+    {
+      "value": "AT",
+      "label": "AT"
+    },
+    {
+      "value": "AU",
+      "label": "AU"
+    },
+    {
+      "value": "BE",
+      "label": "BE"
+    },
+    {
+      "value": "BR",
+      "label": "BR"
+    },
+    {
+      "value": "CA",
+      "label": "CA"
+    },
+    {
+      "value": "CH",
+      "label": "CH"
+    },
+    {
+      "value": "CL",
+      "label": "CL"
+    },
+    {
+      "value": "CN",
+      "label": "CN"
+    },
+    {
+      "value": "CO",
+      "label": "CO"
+    },
+    {
+      "value": "CZ",
+      "label": "CZ"
+    },
+    {
+      "value": "DE",
+      "label": "DE"
+    },
+    {
+      "value": "DK",
+      "label": "DK"
+    },
+    {
+      "value": "DZ",
+      "label": "DZ"
+    },
+    {
+      "value": "EE",
+      "label": "EE"
+    },
+    {
+      "value": "ES",
+      "label": "ES"
+    },
+    {
+      "value": "FR",
+      "label": "FR"
+    },
+    {
+      "value": "GB",
+      "label": "GB"
+    },
+    {
+      "value": "GR",
+      "label": "GR"
+    },
+    {
+      "value": "HN",
+      "label": "HN"
+    },
+    {
+      "value": "HR",
+      "label": "HR"
+    },
+    {
+      "value": "HU",
+      "label": "HU"
+    },
+    {
+      "value": "IE",
+      "label": "IE"
+    },
+    {
+      "value": "IL",
+      "label": "IL"
+    },
+    {
+      "value": "IN",
+      "label": "IN"
+    },
+    {
+      "value": "IQ",
+      "label": "IQ"
+    },
+    {
+      "value": "IR",
+      "label": "IR"
+    },
+    {
+      "value": "IT",
+      "label": "IT"
+    },
+    {
+      "value": "JP",
+      "label": "JP"
+    },
+    {
+      "value": "KE",
+      "label": "KE"
+    },
+    {
+      "value": "LU",
+      "label": "LU"
+    },
+    {
+      "value": "MD",
+      "label": "MD"
+    },
+    {
+      "value": "MT",
+      "label": "MT"
+    },
+    {
+      "value": "MX",
+      "label": "MX"
+    },
+    {
+      "value": "MY",
+      "label": "MY"
+    },
+    {
+      "value": "NG",
+      "label": "NG"
+    },
+    {
+      "value": "NL",
+      "label": "NL"
+    },
+    {
+      "value": "NZ",
+      "label": "NZ"
+    },
+    {
+      "value": "PK",
+      "label": "PK"
+    },
+    {
+      "value": "PL",
+      "label": "PL"
+    },
+    {
+      "value": "PT",
+      "label": "PT"
+    },
+    {
+      "value": "RO",
+      "label": "RO"
+    },
+    {
+      "value": "RU",
+      "label": "RU"
+    },
+    {
+      "value": "SG",
+      "label": "SG"
+    },
+    {
+      "value": "SI",
+      "label": "SI"
+    },
+    {
+      "value": "TR",
+      "label": "TR"
+    },
+    {
+      "value": "UA",
+      "label": "UA"
+    },
+    {
+      "value": "US",
+      "label": "US"
+    },
+    {
+      "value": "VN",
+      "label": "VN"
+    }
+  ],
+  "work_year": [
+    2020,
+    2021,
+    2022
+  ],
+  "remote_ratio": [
+    0,
+    50,
+    100
+  ]
+}
